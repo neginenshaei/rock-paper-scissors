@@ -1,1 +1,100 @@
+/* header  */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(../assets/img/background.jpg) no-repeat center center/cover;
+}
 
+.banner {
+  /* font-family: "Advent Pro"; */
+  /* font-family: 'Rock Salt'; */
+  font-family: "Short Stack";
+  /* font-family: 'Poiret One'; */
+  /* font-family: "Knewave"; */
+  position: absolute;
+  top: 40%;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.banner-heading {
+  animation: animH 2s;
+}
+
+.banner-par {
+  animation: animP 2s;
+}
+
+@keyframes animH {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animP {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* end of header  */
+
+/* game  */
+#round,
+#scores,
+#remove {
+  font-family: "Poiret One";
+}
+
+#remove {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.choose {
+  max-width: 40px;
+}
+
+.hands {
+  animation: handShake 2s;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+  box-shadow: 2px 2px 30px rgb(201, 121, 17);
+}
+
+.resultText {
+  animation: textAnim 2s;
+}
+
+@keyframes handShake {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes textAnim {
+  0% {
+    transform: scaleX(0.5);
+  }
+  50% {
+    transform: scaleX(2);
+  }
+}
+/* end of game  */
